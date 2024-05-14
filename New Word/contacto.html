@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Word- The English Experts</title>
+    <link rel="stylesheet" href="./css/contacto.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="header-menu">
+            <a href="./index.html">Inicio</a>
+            <a href="./curso-adolescentes.html">Cursos</a>
+            <a href="./cursos-adultos.html">Nosotros</a>
+            <a href="./contacto.html"> Contacto</a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="grid_titulo">
+            <img id="logo" src="./img/logo (1).png" alt="logo">
+            <!-- <h1 style="text-align: center;">Instituto de Inglés</h1>
+            <h2 style="text-align: center;">Formulario de inscripción</h2> -->
+            <p id="titulo">Instituto de Inglés<br>Formulario de inscripción</p>
+        </div>
+
+        <div class="container">
+              
+            <form action="" method=post>        
+                
+                <h3>Datos Personales</h3>
+
+                <div class="caja_datos grid_datos">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required size="15" maxlength="12">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" required size="15" placeholder="Ingrese su apellido ....">
+                    <label for="dni">DNI:</label>
+                    <input type="number" name="dni" id="dni">
+                    <label for="fecha de nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" name="fecnac" id="fecnac">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" name="direccion" id="direccion" required size="15" placeholder="Ingrese su dirección ....">
+                    <label for="Numero Telefonico">Número Telefónico</label>
+                    <input type="number" name="Numero Telefonico" id="Numero Telefonico">
+                    <label for="correo">E-Mail:</label>
+                    <input type="email" name="correo" id="correo">
+                    <label for="ocupacion">Ocupación:</label>
+                    <input type="text" name="ocupacion" id="ocupacion" size="15">
+                    <label for="adjunto">Adjuntar Foto</label>
+                    <input type="file" name="adjunto" id="adjunto">
+                </div>
+                
+                <div class="caja_genero">
+                    <label for="radio">Género: </label>
+                    <input type="radio" name="rb" id="rb" value="1">Mujer
+                    <input type="radio" name="rb" id="rb" value="2">Hombre
+                </div>
+                
+                <label for="op" class="label_grid">Estudios:</label>
+                <div class="grid_estudios">
+                    <!-- <label for="op"></label> -->
+                    <input type="checkbox" name="op" id="op" value="1" checked>Primario
+                    <input type="checkbox" name="op" id="op" value="2">Secundario
+                    <input type="checkbox" name="op" id="op" value="3">Terciario
+                    <input type="checkbox" name="op" id="op" value="4">Universitario
+                    <input type="checkbox" name="op" id="op" value="5">Otro
+                </div>
+
+                <h3>Detalles de los cursos</h3>                    
+                
+                <label for="radio" class="label_grid">Cursos Disponibles:</label>
+                <div class="grid_cursos">
+                    <input type="radio" name="rb" id="rb" value="1">Curso-Niños
+                    <input type="radio" name="rb" id="rb" value="2">Curso-Adolescentes
+                    <input type="radio" name="rb" id="rb" value="3">Cursos-Adultos
+                </div>
+                
+                <label for="op" class="label_grid">Frecuencia:</label>
+                <div class="grid_frecuencia">
+                    <input type="checkbox" name="op" id="op" value="1" checked>Lunes
+                    <input type="checkbox" name="op" id="op" value="2">Martes
+                    <input type="checkbox" name="op" id="op" value="3">Miércoles
+                    <input type="checkbox" name="op" id="op" value="4">Jueves
+                    <input type="checkbox" name="op" id="op" value="5">Viernes
+                </div>
+                
+                <label for="radio" class="label_grid">Seleccione un turno de preferencia: </label>
+                <div class="grid_turno">
+                    <input type="radio" name="rb" id="rb" value="1">Mañana
+                    <input type="radio" name="rb" id="rb" value="2">Tarde
+                </div>    
+
+                <h3>No olvides dejar tus consultas</h3>
+ 
+                <label for="consultas"></label>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese su consulta"></textarea>
+
+                <p>* campo requerido</p>
+                <div class="caja_submit">
+                    <!-- <span style="height: 10px; background-color: red; "
+                    <button type="submit">ENVIAR</button>
+                    <button type="reset">LIMPIAR</button>> -->
+                    <input type="submit" value="Enviar datos">
+                    <input type="reset" value="Limpiar formulario">
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
